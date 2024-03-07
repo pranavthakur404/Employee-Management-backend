@@ -3,7 +3,9 @@ require("dotenv").config();
 
 const dbConnect = () => {
   mongoose
-    .connect(process.env.DATABASE_URL)
+    .connect(
+      "mongodb+srv://pranavufc:SoRbyqbAVebbqOYX@cluster0.jtcfr0w.mongodb.net/Employ_management"
+    )
     .then(() => console.log("Database connect successfully"))
     .catch((err) => {
       console.log(err);
