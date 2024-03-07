@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const dbConnect = () => {
-  mongoose
+const dbConnect = async () => {
+  await mongoose
     .connect(
       "mongodb+srv://pranavufc:SoRbyqbAVebbqOYX@cluster0.jtcfr0w.mongodb.net/Employ_management"
     )
